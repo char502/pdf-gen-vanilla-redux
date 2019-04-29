@@ -1,0 +1,257 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.SOW_h1 {
+  color: #269ad2;
+}
+
+/* Nav Link formatting */
+.is-active {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+/* PDFGenMain Form Page */
+.formContainer {
+  margin: 20px;
+  padding: 60px;
+  background-color: #269ad2;
+  border-radius: 5px;
+}
+
+div.form-group {
+  border: double darkblue;
+  border-radius: 5px;
+}
+
+label.form-label {
+  padding: 10px;
+  font-size: 20px;
+}
+
+input.form-radiobuttons {
+  margin-right: 10px;
+}
+
+div.radio-group {
+  margin-left: 30px;
+  margin-bottom: 10px;
+}
+
+div.radio-group label {
+  padding: 10px;
+  border: double darkblue;
+  border-radius: 5px;
+}
+
+input.form-checkbox {
+  margin-right: 10px;
+}
+
+textarea.form-control {
+  width: 70%;
+  margin-left: 30px;
+  margin-bottom: 20px;
+}
+
+/* checkbox group */
+.checked-form-group {
+  margin-left: 30px;
+  margin-bottom: 10px;
+  padding-left: 30px;
+}
+
+/* .checked-form-group label {
+  padding: 10px;
+  padding-left: 10px;
+} */
+
+div.checkbox-group label {
+  margin-left: 30px;
+  padding: 10px;
+  display: block;
+  margin-right: 0;
+
+  /* border: 1px solid darkgray; */
+}
+
+input#SOW Type.form-checkbox {
+  /* padding: 50px; */
+  margin-right: 10px;
+}
+
+/* input.form-checkbox {
+  padding-left: 30px;
+} */
+
+/* Retrieve Previous page */
+/* CSS goes here */
+
+/* Professional Services Page */
+.container-fluid {
+  margin: 30px;
+}
+.col-sm-4 {
+  margin-left: 10px;
+  padding: 10px;
+  /* border: 1px solid black; */
+  border-style: double;
+  overflow-wrap: break-word;
+  font-size: 14px;
+  margin-bottom: 5px;
+  background-color: #00b6f1;
+}
+
+.col-sm-8 {
+  /* border: 1px solid black; */
+  border-style: double;
+  margin: 10px;
+  margin-left: 10px;
+  padding: 5px;
+  font-size: 14px;
+  background-color: #00b6f1;
+  margin-right: 10vw;
+}
+
+/* ==================================== */
+
+/* .container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.box > * {
+  flex: 1 1 160px;
+}
+
+.boxOne,
+.boxTwo {
+  margin: 5px;
+  padding: 5px;
+  border: 1px solid black;
+}
+
+.boxThree {
+  border: 1px solid black;
+  width: auto;
+} */
+
+/* ======================================== */
+
+/* .boxOne {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+  padding: 15px;
+  margin: 5px;
+}
+
+.boxTwo {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+  padding: 15px;
+  margin: 5px;
+}
+
+.boxThree {
+  border: 1px solid black;
+  padding: 15px;
+  margin: auto;
+  max-width: auto;
+
+} */
+
+/* ================================ */
+
+/* .boxOne {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+  padding: 15px;
+  margin: 5px;
+  /* float: left;
+  width: 40%;
+  padding: 15px;
+  border: 1px solid black;
+  margin: 5px;
+} */
+
+/* .boxTwo {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+  padding: 15px;
+  margin: 5px;
+  /* float: left;
+  width: 40%;
+  margin: 5px; 
+} */
+
+/* .boxThree {
+  border: 1px solid black;
+  padding: 15px;
+  margin: auto;
+  max-width: auto;
+} */
+
+/* ========================= */
+/* .boxOne {
+  float: left;
+  width: 40%;
+  padding: 15px;
+  border: 1px solid black;
+  margin: 5px;
+}
+
+.boxTwo {
+  float: left;
+  width: 40%;
+  padding: 15px;
+  border: 1px solid black;
+  margin: 5px;
+}
+
+.boxThree {
+  width: auto;
+  height: auto;
+  border: 1px solid black;
+  margin: 5px;
+  clear: both;
+  margin: 5px;
+  padding: 5px;
+} */
+/* ========================= */
+/* .column {
+  float: left;
+  width: 33.3%;
+  padding: 15px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+} */
+/* body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+} */
