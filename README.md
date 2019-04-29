@@ -11,5 +11,3 @@
 - Redux
 - SQL
 - PDF Generator for react
-
-####testing
