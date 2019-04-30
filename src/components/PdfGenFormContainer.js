@@ -23,8 +23,8 @@ class PdfGenFormContainer extends React.Component {
         "Custom Professional Services SOW"
       ],
       sowTypeSelectedOption: [],
-      prodSowTestInformation: "",
-      customProfServicesInformation: "",
+      // prodSowTestInformation: "",
+      // customProfServicesInformation: "",
       checkboxes: [],
       product_families: [],
       productFamilyNew: {
@@ -121,7 +121,9 @@ class PdfGenFormContainer extends React.Component {
     this.setState({
       areaSelectedOption: [],
       customerInformation: "",
-      sowTypeSelectedOption: []
+      sowTypeSelectedOption: [],
+      prodSowTestInformation: "",
+      customProfServicesInformation: ""
     });
   }
 
