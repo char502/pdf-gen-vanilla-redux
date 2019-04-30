@@ -13,7 +13,7 @@ class SOWType extends React.Component {
           <h6>{this.props.subtitle}</h6>
         </label>
         <div className="checkbox-group">
-          {this.props.options.map(option => {
+          {this.props.options.map((option) => {
             return (
               <label key={option}>
                 <input

@@ -74,9 +74,9 @@ class PdfGenFormContainer extends React.Component {
 
   getProductFamilies = () => {
     fetch("http://localhost:4000/product_familes")
-      .then(response => response.json())
-      .then(response => this.setState({ product_families: response.data }))
-      .catch(err => console.error(err));
+      .then((response) => response.json())
+      .then((response) => this.setState({ product_families: response.data }))
+      .catch((err) => console.error(err));
   };
 
   // checkForDups = () => {
@@ -97,7 +97,7 @@ class PdfGenFormContainer extends React.Component {
     )
       .then(this.getProductFamilies)
       // .then(this.checkForDups())
-      .catch(err => console.error(err));
+      .catch((err) => console.error(err));
   };
   // === End of SOW Type group ===
 
@@ -131,7 +131,7 @@ class PdfGenFormContainer extends React.Component {
 
     if (this.state.sowTypeSelectedOption.indexOf(newSelection) > -1) {
       newSelectionArray = this.state.sowTypeSelectedOption.filter(
-        item => item !== newSelection
+        (item) => item !== newSelection
       );
     } else {
       newSelectionArray = [...this.state.sowTypeSelectedOption, newSelection];
@@ -255,7 +255,7 @@ class PdfGenFormContainer extends React.Component {
           <input
             value={productFamilyNew.productFamily}
             placeholder={"Add New Product Family"}
-            onChange={e =>
+            onChange={(e) =>
               this.setState({
                 productFamilyNew: {
                   ...productFamilyNew,
