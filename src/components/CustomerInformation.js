@@ -1,16 +1,9 @@
 import React from "react";
-import PropTypes from "prop-types";
+// import PropTypes from "prop-types";
 import { connect } from "react-redux";
-import { handleTextArea } from "../redux/actions/pdfGenActions";
+// import { handleTextArea } from "../redux/actions/pdfGenActions";
 
-const CustomerInformation = (
-  // dispatch,
-  // handleChange,
-  // title,
-  // value,
-  // placeholder
-  props
-) => {
+const CustomerInformation = (props) => {
   console.log(props);
   return (
     // console.log(mapStateToProps)
@@ -38,17 +31,17 @@ const CustomerInformation = (
   );
 };
 
-CustomerInformation.propTypes = {
-  handleTextArea: PropTypes.func,
-  title: PropTypes.string,
-  value: PropTypes.string
-};
+// CustomerInformation.propTypes = {
+//   handleTextArea: PropTypes.func,
+//   title: PropTypes.string,
+//   value: PropTypes.string
+// };
 
-CustomerInformation.defaultProps = {
-  handleChange: (e) => console.info(`New value : ${e.target.value}`),
-  title: null,
-  value: null
-};
+// CustomerInformation.defaultProps = {
+//   handleChange: (e) => console.info(`New value : ${e.target.value}`),
+//   title: null,
+//   value: null
+// };
 
 const mapStateToProps = (state) => {
   return {
@@ -59,18 +52,21 @@ const mapStateToProps = (state) => {
 const mapDispatchToProps = (dispatch) => {
   return {
     handleTextArea: (e) => {
-      console.log(e.target.value);
-      dispatch({
-        type: "HANDLE_TEXT_AREA",
-        text: e.target.value
-      });
+      console.log("changed", e.target.value);
+      const action = { type: "HANDLE_TEXT_AREA", text: e.target.value };
+      dispatch(action);
     }
+    // handleTextArea: (e) => {
+    //   console.log(e.target.value);
+    //   dispatch({
+    //     type: "HANDLE_TEXT_AREA",
+    //     text: e.target.value
+    //   });
+    // }
   };
 };
 
-export default CustomerInformation;
-
-connect(
+export default connect(
   mapStateToProps,
   mapDispatchToProps
 )(CustomerInformation);

@@ -23,16 +23,7 @@ export const addForm = ({ id = 0 } = {}) => ({
 //   };
 // };
 
-export const handleTextArea = (e) => {
-  // this.setState(
-  //   {
-  //     customerInformation: e.target.value
-  //   },
-  //   () => console.log("Customer Information:", this.state.customerInformation)
-  // );
-  return {
-    type: HANDLE_TEXT_AREA,
-    // customerInformation: e.target.value
-    text: e.target.value
-  };
-};
+export const handleTextArea = (text) => ({
+  type: HANDLE_TEXT_AREA,
+  text
+});

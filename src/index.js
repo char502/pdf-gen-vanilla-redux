@@ -6,7 +6,7 @@ import * as serviceWorker from "./serviceWorker";
 import configureStore from "./store/configureStore";
 import "./css/index.css";
 import { addForm } from "./redux/actions/pdfGenActions";
-import { handleTextArea } from "./redux/actions/pdfGenActions";
+// import { handleTextArea } from "./redux/actions/pdfGenActions";
 
 //Bootstrap
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -15,7 +15,7 @@ const store = configureStore();
 
 store.dispatch(addForm({ id: 67 }));
 
-store.dispatch(handleTextArea({ customerInformation: "Test 113" }));
+// store.dispatch(handleTextArea({ customerInformation: "Test 113" }));
 
 const routerAndStore = (
   <Provider store={store}>

@@ -7,7 +7,7 @@ import CustomerInformation from "./CustomerInformation";
 // import ProdSOWExtOptions from "./ExtendedOptions/ProdSOWExtOptions";
 // import TeradataExtOptions from "./ExtendedOptions/TeradataExtOptions";
 // import CustomProfExtOptions from "./ExtendedOptions/CustomProfExtOptions";
-import PropTypes from "prop-types";
+// import PropTypes from "prop-types";
 // import SowType from "./SOWType";
 
 class PdfGenFormContainer extends React.Component {
@@ -223,7 +223,7 @@ class PdfGenFormContainer extends React.Component {
     return (
       <div>
         <CustomerInformation
-          customerInformation={this.props.customerInformation}
+          customerInformation={this.customerInformation}
           /* handleChange={(newValue) => addChange("field", newValue)}
           title="Customer Information"
           value={this.props.value} */
@@ -239,27 +239,27 @@ class PdfGenFormContainer extends React.Component {
   }
 }
 
-PdfGenFormContainer.propTypes = {
-  // addChange: PropTypes.func.isRequired,
-  // discardChanges: PropTypes.func.isRequired,
-  formView: PropTypes.shape({
-    title: PropTypes.string,
-    field: PropTypes.string
-  }),
-  formEdit: PropTypes.shape({
-    title: PropTypes.string,
-    field: PropTypes.string
-  }),
-  hasChanged: PropTypes.bool
-  // saveChanges: PropTypes.func.isRequired,
-  // setUpEditableForm: PropTypes.func.isRequired
-};
+// PdfGenFormContainer.propTypes = {
+//   // addChange: PropTypes.func.isRequired,
+//   // discardChanges: PropTypes.func.isRequired,
+//   formView: PropTypes.shape({
+//     title: PropTypes.string,
+//     field: PropTypes.string
+//   }),
+//   formEdit: PropTypes.shape({
+//     title: PropTypes.string,
+//     field: PropTypes.string
+//   }),
+//   hasChanged: PropTypes.bool
+//   // saveChanges: PropTypes.func.isRequired,
+//   // setUpEditableForm: PropTypes.func.isRequired
+// };
 
-PdfGenFormContainer.defaultProps = {
-  formView: null,
-  formEdit: null,
-  hasChanged: true
-};
+// PdfGenFormContainer.defaultProps = {
+//   formView: null,
+//   formEdit: null,
+//   hasChanged: true
+// };
 
 export default PdfGenFormContainer;
 
